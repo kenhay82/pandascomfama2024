@@ -13,5 +13,5 @@ def analizarCanastaBasica():
     #print(tabla.head(20)) #primeros N registros
     #print(tabla.tail())
 
-    print(tabla.describe())
+  
 
