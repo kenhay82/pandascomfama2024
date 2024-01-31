@@ -1,47 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
 </head>
+
 <body>
-
     <main>
-
         <section>
-            <img src="./assets/img/foto.webp" alt="comida" class="w-100 img-fluid">
+            <img src="./assets/img/foto.webp" alt="comida" class="w-100 img-fluid" />
         </section>
         <section>
             <div class="container">
                 <div class="row justify-content-center my-5 text-center">
                     <div class="col-5">
                         <h5>ANALISIS</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore amet id fugiat esse tempore vitae, impedit dolorum cupiditate perspiciatis quisquam minima asperiores eos tenetur pariatur quas blanditiis eaque. Praesentium iure est quod dolores expedita quas rerum beatae! Consequuntur quas cum culpa atque rem maiores. Soluta officia quod delectus velit dolores?</p>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
+                            amet id fugiat esse tempore vitae, impedit dolorum cupiditate
+                            perspiciatis quisquam minima asperiores eos tenetur pariatur
+                            quas blanditiis eaque. Praesentium iure est quod dolores
+                            expedita quas rerum beatae! Consequuntur quas cum culpa atque
+                            rem maiores. Soluta officia quod delectus velit dolores?
+                        </p>
                     </div>
                 </div>
             </div>
         </section>
-        <hr>
+        <hr />
         <section>
-            <div class="container">
-                <div class="row my-5 text-center">
-                    <div class="col-6 border border-end shadow">
-                        <h4>Resultados: </h4>
-                        <img src="./assets/img/carpeta.png" alt="tablas" class="mx-auto d-block w-25 m-2">
+            <div class="container-fluid">
+                <div class="row justify-content-around">
+                    <div class="col-sm-5 border border-end m-3 p-3">
+                        <h4>Resultados:</h4>
+                        <img src="./assets/img/carpeta.png" alt="tablas" class="mx-auto d-block w-25 m-2" />
+                        <section class="my-4 px-lg-4">
+                            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" id="home-tab" data-bs-toggle="tab"
+                                        data-bs-target="#home-tab-pane" type="button" role="tab"
+                                        aria-controls="home-tab-pane" aria-selected="true">
+                                        Panes en el Mundo...
+                                    </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="profile-tab" data-bs-toggle="tab"
+                                        data-bs-target="#profile-tab-pane" type="button" role="tab"
+                                        aria-controls="profile-tab-pane" aria-selected="false">
+                                        Precios de Comida
+                                    </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="contact-tab" data-bs-toggle="tab"
+                                        data-bs-target="#contact-tab-pane" type="button" role="tab"
+                                        aria-controls="contact-tab-pane" aria-selected="false">
+                                        Contact
+                                    </button>
+                                </li>
+                            </ul>
+                            <div class="tab-content" id="myTabContent">
+                                <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel"
+                                    aria-labelledby="home-tab" tabindex="0">
+                                    <iframe src="./assets/tables/filtrodepanes.html" frameborder="0" class="w-100">
+
+                                    </iframe>
+                                </div>
+                                <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel"
+                                    aria-labelledby="profile-tab" tabindex="0">
+                                    <iframe src="./assets/tables/filtroprecios.html" frameborder="0" class="img-fluid w-100">
+                                    </iframe>
+                                </div>
+                                <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel"
+                                    aria-labelledby="contact-tab" tabindex="0">
+                                    <iframe src="" frameborder="0">
+                                        
+                                    </iframe>
+                                </div>
+                                <div class="tab-pane fade" id="disabled-tab-pane" role="tabpanel"
+                                    aria-labelledby="disabled-tab" tabindex="0">
+                                    ...
+                                </div>
+                            </div>
+                        </section>
                     </div>
-                    <div class="col-6">
-                        <h4>Gráficas: </h4>
-                        <img src="./assets/img/computadora.png" alt="tablas" class="mx-auto d-block w-25 m-2">
+                    <div class="col-sm-5 border border-end m-3 p-3">
+                        <h4>Gráficas:</h4>
+                        <img src="./assets/img/computadora.png" alt="tablas" class="mx-auto d-block w-25 m-2" />
+                        <div class="contarner-fluid">
+                            <img src="./assets/graphs/promedioPanes.png" alt="Grafica" class="w-75 m-5">
+                        </div>
+                        
                     </div>
                 </div>
             </div>
-
         </section>
-
     </main>
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
